@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image upload example</title>
+</head>
+<body>
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- {{ form.as_p }} -->
+        <label>Upload image</label>
+                          <input required name="emp_image" type="file" multiple class="emp_image">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
+<!-- <label>Upload image</label>
+                  <input required name="images" type="file" multiple class="form-control-file"> -->
